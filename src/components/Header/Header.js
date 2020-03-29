@@ -1,5 +1,11 @@
 import React from 'react';
+import './header.scss';
 
 export default function Header() {
-  return <div></div>;
+  return (
+    <header>
+      <h1>COVID-19 CORONAVIRUS PANDEMIC</h1>
+      <p>Last updated: </p>
+    </header>
+  );
 }
