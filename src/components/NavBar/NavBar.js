@@ -7,9 +7,17 @@ export default function NavBar() {
   return (
     <div className='navBar'>
       <ul>
-        <li>Home</li>
-        <li>Countries</li>
-        <li>Graphs</li>
+        <NavLink to='/'>
+          <li>Home</li>
+        </NavLink>
+
+        <NavLink to='/countries'>
+          <li>Countries</li>
+        </NavLink>
+
+        <NavLink to='/info'>
+          <li>Useful Info</li>
+        </NavLink>
       </ul>
     </div>
   );
