@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-
-import NavBar from './components/NavBar/NavBar';
 import { Button } from '@material-ui/core';
+
 import Home from './components/Home/Home';
+import Header from './components/Header/Header';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
