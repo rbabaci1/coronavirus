@@ -3,5 +3,9 @@ import React from 'react';
 import './home.scss';
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div className='home'>
+      <h1>Home here</h1>
+    </div>
+  );
 }
