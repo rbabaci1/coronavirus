@@ -1,6 +1,8 @@
+@import '../../mixins/mixins.scss';
+
 .navBar {
   width: 250px;
-  border-right: 2px solid yellow;
+  background-color: rgba(68, 139, 141, 0.9);
 
   ul {
     list-style-type: none;
@@ -16,10 +18,9 @@
       text-decoration: none;
       font-size: 24px;
       margin: 10px 0;
-      border-top: 1px solid;
-      border-bottom: 1px solid;
-      border-right: 1px solid;
-      outline: none;
+
+      @include link-borders;
+
       &:visited {
         color: inherit;
       }
@@ -33,6 +34,8 @@
 }
 .active {
   transition: 0.5s;
-  color: #fff !important;
-  background: rgb(83, 82, 82);
+  & ::first-line {
+    color: rgb(226, 222, 222);
+  }
+  background-color: #23282e;
 }

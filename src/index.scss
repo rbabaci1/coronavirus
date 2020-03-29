@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #23282e;
-
   background-image: url('./images/world-1185076_1280.png');
   background-size: cover;
   background-position: center;
@@ -19,6 +17,6 @@ code {
 }
 
 .App {
-  background-color: rgba(124, 120, 120, 0.4);
+  background-color: rgba(124, 120, 120, 0.5);
   display: flex;
 }
