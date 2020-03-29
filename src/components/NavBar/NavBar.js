@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <div className='navBar'>
       <ul>
-        <NavLink to='/home'>
+        <NavLink exact to='/'>
           <li>Home</li>
         </NavLink>
 
