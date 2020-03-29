@@ -7,7 +7,9 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <div className='App'>
-      <Route path='/' component={Home} />
+      <Switch>
+        <Route path='/' component={Home} />
+      </Switch>
     </div>
   );
 }
