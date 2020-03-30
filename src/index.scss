@@ -7,15 +7,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 10px 0;
+  color: #f7f7f7;
+}
 
 .App {
   background-color: rgba(124, 120, 120, 0.5);
-  display: flex;
   height: 100vh;
 }
