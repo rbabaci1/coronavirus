@@ -1,32 +1,41 @@
 import React from 'react';
 import { useFetch } from '../../hooks/useFetch';
 
+import CountryCard from '../CountryCard/CountryCard';
 import './mainContent.scss';
 
 export default function MainContent() {
   //   const [countries, error] = useFetch('https://corona.lmao.ninja/countries');
-  const usa = {
-    country: 'USA',
-    countryInfo: {
-      _id: 840,
+  const countries = [
+    {
       country: 'USA',
-      iso2: 'US',
-      iso3: 'USA',
-      lat: 38,
-      long: -97,
-      flag:
-        'https://raw.githubusercontent.com/NovelCOVID/API/master/assets/flags/us.png'
-    },
-    cases: 123428,
-    todayCases: 19302,
-    deaths: 2211,
-    todayDeaths: 515,
-    recovered: 3231,
-    active: 117986,
-    critical: 2666,
-    casesPerOneMillion: 373,
-    deathsPerOneMillion: 7
-  };
+      countryInfo: {
+        _id: 840,
+        country: 'USA',
+        iso2: 'US',
+        iso3: 'USA',
+        lat: 38,
+        long: -97,
+        flag:
+          'https://raw.githubusercontent.com/NovelCOVID/API/master/assets/flags/us.png'
+      },
+      cases: 123428,
+      todayCases: 19302,
+      deaths: 2211,
+      todayDeaths: 515,
+      recovered: 3231,
+      active: 117986,
+      critical: 2666,
+      casesPerOneMillion: 373,
+      deathsPerOneMillion: 7
+    }
+  ];
 
-  return <div className='countries'></div>;
+  return (
+    <div className='countries'>
+      {countries.map(country => (
+        <CountryCard country={country} />
+      ))}
+    </div>
+  );
 }
