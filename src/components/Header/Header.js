@@ -5,7 +5,7 @@ import './header.scss';
 export default function Header() {
   return (
     <header>
-      <h1>COVID-19 CORONAVIRUS PANDEMIC</h1>
+      <h1>COVID-19 WORLD WIDE CASES</h1>
     </header>
   );
 }
