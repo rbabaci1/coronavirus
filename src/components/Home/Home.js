@@ -14,7 +14,20 @@ export default function Home() {
 
   return (
     <div className='home'>
-      <h1>Home</h1>
+      <section>
+        <h2>Coronavirus Cases:</h2>
+        <span className='cases'>{globalCases.cases}</span>
+      </section>
+
+      <section>
+        <h2>Deaths:</h2>
+        <span className='deaths'>{globalCases.deaths}</span>
+      </section>
+
+      <section>
+        <h2>Recovered:</h2>
+        <span className='recovered'>{globalCases.recovered}</span>
+      </section>
     </div>
   );
 }

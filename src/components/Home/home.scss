@@ -1,11 +1,37 @@
 .home {
   box-sizing: border-box;
   margin-left: 250px;
-  border: 1px solid gold;
+  text-align: center;
+  background-color: rgba(19, 19, 18, 0.8);
 
   h1 {
     margin: 0;
     padding: 20px 0;
-    color: #fff;
+  }
+  section {
+    margin: 30px 0;
+    padding: 10px 0;
+
+    h2 {
+      margin: 0 0 3px 0;
+      color: goldenrod;
+      font-size: 32px;
+      letter-spacing: 1px;
+      font-weight: normal;
+    }
+    span {
+      font-size: 45px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .cases {
+      color: rgb(153, 150, 150);
+    }
+    .deaths {
+      color: rgb(231, 42, 42);
+    }
+    .recovered {
+      color: #49ce98;
+    }
   }
 }
