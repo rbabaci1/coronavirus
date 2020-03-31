@@ -1,16 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useFetch } from '../../hooks/useFetch';
 
 import './mainContent.scss';
 
 export default function MainContent() {
-  const [countries, setCountries] = useState([]);
-
-  useEffect(() => {
-    fetch('https://corona.lmao.ninja/countries')
-      .then(response => response.json())
-      .then(data => setCountries(data))
-      .catch(console.error);
-  }, []);
+  const [countries, error] = useFetch('https://corona.lmao.ninja/countries');
 
   return <div className='countries'></div>;
 }

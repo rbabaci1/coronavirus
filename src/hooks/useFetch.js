@@ -8,14 +8,14 @@ export const useFetch = url => {
     const fetchData = async () => {
       try {
         const res = await fetch(url);
-        const json = res.json();
+        const json = await res.json();
         setResponse(json);
       } catch (error) {
         setError(error);
       }
     };
     fetchData();
-  }, []);
+  }, [url]);
 
   return [response, error];
 };
