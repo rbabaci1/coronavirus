@@ -19,26 +19,37 @@ export default function Home() {
 
   return (
     <div className='home'>
-      <section>
-        <h2>Coronavirus Cases:</h2>
-        <span className='cases'>
-          {isLoading ? 'Loading...' : globalCases.cases}
-        </span>
-      </section>
+      <div className='top'>
+        <section>
+          <h2>Coronavirus Cases:</h2>
+          <span className='cases'>
+            {isLoading ? 'Loading...' : globalCases.cases}
+          </span>
+        </section>
 
-      <section>
-        <h2>Deaths:</h2>
-        <span className='deaths'>
-          {isLoading ? 'Loading...' : globalCases.deaths}
-        </span>
-      </section>
+        <section>
+          <h2>Deaths:</h2>
+          <span className='deaths'>
+            {isLoading ? 'Loading...' : globalCases.deaths}
+          </span>
+        </section>
+      </div>
 
-      <section>
-        <h2>Recovered:</h2>
-        <span className='recovered'>
-          {isLoading ? 'Loading...' : globalCases.recovered}
-        </span>
-      </section>
+      <div className='bottom'>
+        <section>
+          <h2>Recovered:</h2>
+          <span className='recovered'>
+            {isLoading ? 'Loading...' : globalCases.recovered}
+          </span>
+        </section>
+
+        <section>
+          <h2>Active Cases:</h2>
+          <span className='active-cases'>
+            {isLoading ? 'Loading...' : globalCases.active}
+          </span>
+        </section>
+      </div>
     </div>
   );
 }
