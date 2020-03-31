@@ -14,10 +14,9 @@
       color: rgb(243, 219, 202);
       width: 100px;
       height: 70px;
-      padding: 10px 3px;
       text-align: center;
       border: 1px solid rgb(61, 61, 61);
-      font-size: 20px;
+      font-size: 18px;
       letter-spacing: 0.5px;
 
       img {
@@ -28,6 +27,20 @@
     }
     #cnt {
       width: 130px;
+    }
+    .new-cases {
+      background: rgb(230, 164, 89);
+      color: #111;
+    }
+    .deaths {
+      background: #b91e1e;
+    }
+    .new-deaths {
+      background: #e72a2a;
+    }
+    .recovered {
+      background: #49ce98;
+      color: #111;
     }
   }
 }
@@ -51,7 +64,7 @@
   transition: visibility 0s, opacity 0.4s linear;
 }
 .country:hover .hover-text {
-  background-color: rgba(5, 15, 34, 0.8);
+  background-color: rgba(5, 15, 34, 0.7);
   visibility: visible;
   opacity: 1;
 }

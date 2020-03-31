@@ -38,11 +38,11 @@ export default function MainContent() {
           <p id='country'>Country</p>
           <p>Total Cases</p>
           <p>New Cases</p>
-          <p>Total Deaths</p>
-          <p>New Deaths</p>
           <p>Total Recovered</p>
-          <p>Active Cases</p>
+          <p>Total Deaths</p>
           <p>Critical</p>
+          <p>New Deaths</p>
+          <p>Active Cases</p>
           <p>
             Cases/
             <br />
@@ -57,7 +57,7 @@ export default function MainContent() {
         </section>
 
         {countries.map(country => (
-          <CountryCard country={country} />
+          <CountryCard country={country} date='Jan 20' />
         ))}
       </div>
     </div>

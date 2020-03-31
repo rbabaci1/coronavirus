@@ -1,9 +1,8 @@
 import React from 'react';
 
 import './countryCard.scss';
-import { Container } from '@material-ui/core';
 
-export default function CountryCard({ country }) {
+export default function CountryCard({ country, date }) {
   return (
     <div className='country'>
       <div className='info'>
@@ -11,16 +10,16 @@ export default function CountryCard({ country }) {
           {country.country}
           <img src={country.countryInfo.flag} alt='country flag' />
         </p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>{country.cases}</p>
+        <p className='new-cases'>+{country.todayCases}</p>
+        <p className='recovered'>{country.recovered}</p>
+        <p className='deaths'>{country.deaths}</p>
+        <p>{country.critical}</p>
+        <p className='new-deaths'>+{country.todayDeaths}</p>
+        <p>{country.active}</p>
+        <p>{country.casesPerOneMillion}</p>
+        <p>{country.deathsPerOneMillion}</p>
+        <p>{date}</p>
       </div>
 
       <p className='hover-text'>More Info</p>

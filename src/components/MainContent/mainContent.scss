@@ -3,12 +3,12 @@
 
   .table {
     width: 100%;
+    background-color: rgba(11, 30, 59, 0.8);
 
     .first-row {
       display: flex;
       justify-content: center;
       margin-top: 20px;
-      background-color: rgba(15, 39, 77, 0.8);
 
       p {
         box-sizing: border-box;
