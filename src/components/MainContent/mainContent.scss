@@ -1,3 +1,30 @@
 .countries {
   margin-left: 250px;
+
+  .table {
+    width: 100%;
+
+    .first-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      background-color: rgba(15, 39, 77, 0.8);
+
+      p {
+        box-sizing: border-box;
+        margin: 0;
+        color: #f7f7f7;
+        width: 100px;
+        height: 70px;
+        padding: 10px 3px;
+        text-align: center;
+        border: 1px solid rgb(85, 84, 84);
+        font-size: 18px;
+        letter-spacing: 0.5px;
+      }
+      #country {
+        width: 130px;
+      }
+    }
+  }
 }

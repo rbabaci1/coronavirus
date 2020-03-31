@@ -1,0 +1,57 @@
+.country {
+  cursor: pointer;
+
+  .info {
+    display: flex;
+    justify-content: center;
+
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      margin: 0;
+      color: rgb(243, 219, 202);
+      width: 100px;
+      height: 70px;
+      padding: 10px 3px;
+      text-align: center;
+      border: 1px solid rgb(61, 61, 61);
+      font-size: 20px;
+      letter-spacing: 0.5px;
+
+      img {
+        height: 25px;
+        width: 40px;
+        margin-left: 10px;
+      }
+    }
+    #cnt {
+      width: 130px;
+    }
+  }
+}
+
+.hover-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: calc(100% - 250px);
+  font-size: 26px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  height: 70px;
+  position: absolute;
+  top: 149px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.4s linear;
+  transition: visibility 0s, opacity 0.4s linear;
+}
+.country:hover .hover-text {
+  background-color: rgba(5, 15, 34, 0.8);
+  visibility: visible;
+  opacity: 1;
+}

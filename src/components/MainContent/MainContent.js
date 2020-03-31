@@ -33,9 +33,33 @@ export default function MainContent() {
 
   return (
     <div className='countries'>
-      {countries.map(country => (
-        <CountryCard country={country} />
-      ))}
+      <div className='table'>
+        <section className='first-row'>
+          <p id='country'>Country</p>
+          <p>Total Cases</p>
+          <p>New Cases</p>
+          <p>Total Deaths</p>
+          <p>New Deaths</p>
+          <p>Total Recovered</p>
+          <p>Active Cases</p>
+          <p>Critical</p>
+          <p>
+            Cases/
+            <br />
+            1M pop
+          </p>
+          <p>
+            Deaths/
+            <br />
+            1M pop
+          </p>
+          <p>1st Case Reported</p>
+        </section>
+
+        {countries.map(country => (
+          <CountryCard country={country} />
+        ))}
+      </div>
     </div>
   );
 }
