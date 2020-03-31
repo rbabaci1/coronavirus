@@ -2,14 +2,15 @@
   margin-left: 250px;
 
   .table {
-    width: 100%;
     background-color: rgba(11, 30, 59, 0.8);
-    padding: 10px 0;
+    padding: 10px 20px;
+    width: fit-content;
 
     .first-row {
       display: flex;
       justify-content: center;
       margin-top: 20px;
+      background-color: rgb(54, 52, 50);
 
       p {
         box-sizing: border-box;
@@ -23,8 +24,12 @@
         font-size: 18px;
         letter-spacing: 0.5px;
       }
+
       #country {
         width: 130px;
+        padding-top: 20px;
+        background: rgb(73, 73, 73);
+        font-size: 22px;
       }
     }
   }

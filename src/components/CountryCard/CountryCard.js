@@ -4,7 +4,7 @@ import './countryCard.scss';
 
 export default function CountryCard({ country, date }) {
   return (
-    <div className='country'>
+    <div className='country-card'>
       <p id='cnt'>
         <span>{country.country}</span>
         <img src={country.countryInfo.flag} alt='country flag' />
