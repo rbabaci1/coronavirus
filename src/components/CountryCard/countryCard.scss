@@ -1,70 +1,53 @@
 .country {
-  cursor: pointer;
-
-  .info {
-    display: flex;
-    justify-content: center;
-
-    p {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      margin: 0;
-      color: rgb(243, 219, 202);
-      width: 100px;
-      height: 70px;
-      text-align: center;
-      border: 1px solid rgb(61, 61, 61);
-      font-size: 18px;
-      letter-spacing: 0.5px;
-
-      img {
-        height: 25px;
-        width: 40px;
-        margin-left: 10px;
-      }
-    }
-    #cnt {
-      width: 130px;
-    }
-    .new-cases {
-      background: rgb(230, 164, 89);
-      color: #111;
-    }
-    .deaths {
-      background: #b91e1e;
-    }
-    .new-deaths {
-      background: #e72a2a;
-    }
-    .recovered {
-      background: #49ce98;
-      color: #111;
-    }
-  }
-}
-
-.hover-text {
   display: flex;
   justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: calc(100% - 250px);
-  font-size: 26px;
-  color: #fff;
-  letter-spacing: 1px;
-  text-align: center;
-  height: 70px;
-  position: absolute;
-  top: 149px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0s, opacity 0.4s linear;
-  transition: visibility 0s, opacity 0.4s linear;
-}
-.country:hover .hover-text {
-  background-color: rgba(5, 15, 34, 0.7);
-  visibility: visible;
-  opacity: 1;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    color: rgb(243, 219, 202);
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid rgb(61, 61, 61);
+    font-size: 18px;
+    letter-spacing: 0.5px;
+
+    img {
+      height: 25px;
+      width: 40px;
+      margin-top: 3px;
+    }
+  }
+  #cnt {
+    cursor: pointer;
+    width: 130px;
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      background-color: rgba(5, 15, 34, 0.7);
+      transform: scale(1.05);
+    }
+  }
+  .new-cases {
+    background: rgb(230, 164, 89);
+    color: #111;
+  }
+  .deaths {
+    background: #b91e1e;
+  }
+  .new-deaths {
+    background: #e72a2a;
+  }
+  .recovered {
+    background: #49ce98;
+    color: #111;
+  }
 }

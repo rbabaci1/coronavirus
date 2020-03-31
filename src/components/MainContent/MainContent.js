@@ -5,31 +5,11 @@ import CountryCard from '../CountryCard/CountryCard';
 import './mainContent.scss';
 
 export default function MainContent() {
-  //   const [countries, error] = useFetch('https://corona.lmao.ninja/countries');
-  const countries = [
-    {
-      country: 'USA',
-      countryInfo: {
-        _id: 840,
-        country: 'USA',
-        iso2: 'US',
-        iso3: 'USA',
-        lat: 38,
-        long: -97,
-        flag:
-          'https://raw.githubusercontent.com/NovelCOVID/API/master/assets/flags/us.png'
-      },
-      cases: 123428,
-      todayCases: 19302,
-      deaths: 2211,
-      todayDeaths: 515,
-      recovered: 3231,
-      active: 117986,
-      critical: 2666,
-      casesPerOneMillion: 373,
-      deathsPerOneMillion: 7
-    }
-  ];
+  const countries = useFetch('https://corona.lmao.ninja/countries');
+
+  if (!countries) {
+    return <h1 style={{ textAlign: 'center', color: '#fff' }}>Loading...</h1>;
+  }
 
   return (
     <div className='countries'>
