@@ -1,3 +1,8 @@
+body,
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Ubuntu, sans-serif;
@@ -9,10 +14,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-body,
-html {
-  height: 100%;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -22,6 +23,7 @@ h1 {
   font-size: 30px;
   letter-spacing: 1px;
   margin: 0;
-  padding: 10px 0;
-  color: #3beb67;
+  padding: 15px;
+  background-color: rgba(11, 21, 36, 0.3);
+  color: #18b1a4;
 }
