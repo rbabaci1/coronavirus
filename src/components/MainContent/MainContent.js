@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './mainContent.scss';
 
 export default function MainContent() {
-  return (
-    <div className='countries'>
-      <h1>countries</h1>
-    </div>
-  );
+  const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+    fetch('https://corona.lmao.ninja/countries')
+      .then(response => response.json())
+      .then(data => setCountries(data))
+      .catch(console.error);
+  }, []);
+
+  return <div className='countries'></div>;
 }
