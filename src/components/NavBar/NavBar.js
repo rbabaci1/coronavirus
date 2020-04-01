@@ -16,7 +16,7 @@ export default function NavBar() {
           <li>Cases By Countries</li>
         </NavLink>
 
-        <NavLink to='/info'>
+        <NavLink to='/useful-info'>
           <li>Useful Info</li>
         </NavLink>
       </ul>
