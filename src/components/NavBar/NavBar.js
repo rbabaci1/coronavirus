@@ -24,6 +24,8 @@ export default function NavBar() {
       <p>
         Last updated: <span>{Moment().format('MMMM Do YYYY, h:00 a PT')}</span>
       </p>
+
+      <div id='copyright'>&copy;r.babaci 2020</div>
     </div>
   );
 }
