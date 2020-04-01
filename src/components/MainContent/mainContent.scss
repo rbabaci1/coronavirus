@@ -5,8 +5,9 @@
 
   .table {
     background-color: rgba(11, 30, 59, 0.8);
-    padding: 10px 20px;
+    padding: 10px 30px;
     width: fit-content;
+    margin: auto;
 
     .first-row {
       @include flex-here(row, center, null);

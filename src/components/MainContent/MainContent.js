@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFetch } from '../../hooks/useFetch';
 
 import CountryCard from '../CountryCard/CountryCard';
@@ -6,6 +6,8 @@ import './mainContent.scss';
 
 export default function MainContent() {
   const countries = useFetch('https://corona.lmao.ninja/countries');
+  const [searchResult, setSearchResult] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
   if (!countries) {
     return <h1 style={{ textAlign: 'center', color: '#fff' }}>Loading...</h1>;
@@ -19,9 +21,9 @@ export default function MainContent() {
           <p>Total Cases</p>
           <p>New Cases</p>
           <p>Total Recovered</p>
-          <p>Total Deaths</p>
           <p>Critical</p>
           <p>New Deaths</p>
+          <p>Total Deaths</p>
           <p>Active Cases</p>
           <p>
             Cases/
@@ -33,12 +35,12 @@ export default function MainContent() {
             <br />
             1M pop
           </p>
-          <p>1st Case Reported</p>
         </section>
 
-        {countries.map(country => (
-          <CountryCard country={country} />
-        ))}
+        {countries &&
+          countries.map((country, index) => (
+            <CountryCard country={country} key={index} />
+          ))}
       </div>
     </div>
   );
