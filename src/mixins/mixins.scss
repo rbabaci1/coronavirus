@@ -7,8 +7,8 @@
 
 @mixin row-style {
   @include flex-here(row, center, null);
+  @include height-width(65px, 100px);
   font-size: 18px;
-  @include height-width(70px, 100px);
   text-align: center;
   letter-spacing: 0.5px;
   border: 1px solid rgb(85, 84, 84);

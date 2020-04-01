@@ -5,7 +5,7 @@
 
   p {
     @include row-style();
-    @include flex-here(row, center, center);
+    align-items: center;
     font-size: 20px;
 
     color: rgb(243, 219, 202);

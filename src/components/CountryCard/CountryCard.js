@@ -1,8 +1,17 @@
 import React from 'react';
+import { useFetch } from '../../hooks/useFetch';
 
 import './countryCard.scss';
 
-export default function CountryCard({ country, date }) {
+export default function CountryCard({ country }) {
+  const date = useFetch(
+    `https://coronavirus-19-api.herokuapp.com/countries/${country.country}`
+  );
+
+  if (!date) {
+    return <h1 style={{ textAlign: 'center', color: '#fff' }}>Loading...</h1>;
+  }
+
   return (
     <div className='country-card'>
       <p id='cnt'>
@@ -19,7 +28,7 @@ export default function CountryCard({ country, date }) {
       <p>{country.active}</p>
       <p>{country.casesPerOneMillion}</p>
       <p>{country.deathsPerOneMillion}</p>
-      <p>{date}</p>
+      <p>{date.firstCase}</p>
     </div>
   );
 }

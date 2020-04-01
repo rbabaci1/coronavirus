@@ -37,7 +37,7 @@ export default function MainContent() {
         </section>
 
         {countries.map(country => (
-          <CountryCard country={country} date='Jan 20' />
+          <CountryCard country={country} />
         ))}
       </div>
     </div>
