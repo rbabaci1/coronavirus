@@ -25,7 +25,7 @@
       margin-bottom: 20px;
       box-shadow: 0 15px 10px -15px #111;
 
-      @include link-borders;
+      @include link-borders();
 
       &:visited {
         color: inherit;
