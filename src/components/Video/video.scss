@@ -1,0 +1,33 @@
+div {
+  .media {
+    margin-top: 20px;
+    background: rgba(18, 32, 53, 0.5);
+    width: fit-content;
+
+    .media-player {
+      width: fit-content;
+      margin: auto;
+      height: 100%;
+    }
+    .media-controls {
+      text-align: center;
+
+      button {
+        position: relative;
+        bottom: 3px;
+        font-size: 20px;
+        margin: 0 2px;
+        padding: 5px 15px;
+        border-radius: 2px;
+        background: rgba(18, 32, 53, 0.8);
+        border: none;
+        color: rgb(211, 208, 208);
+        cursor: pointer;
+
+        &:hover {
+          background: #111;
+        }
+      }
+    }
+  }
+}
