@@ -31,6 +31,10 @@
       transform: scale(1.05);
     }
   }
+  .cases,
+  .active-cases {
+    color: rgb(248, 183, 63);
+  }
   .new-cases {
     background: rgb(230, 164, 89);
     color: #111;
