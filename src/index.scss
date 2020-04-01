@@ -26,3 +26,7 @@ h1 {
   padding: 15px;
   @include add-style(30px, #19beb1, null);
 }
+.status {
+  margin-left: 250px;
+  color: rgb(240, 75, 34);
+}
