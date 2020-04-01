@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useFetch } from '../../hooks/useFetch';
 
 import CountryCard from '../CountryCard/CountryCard';
@@ -19,7 +19,16 @@ export default function MainContent() {
   const countries = useFetch('https://corona.lmao.ninja/countries');
   const [searchResult, setSearchResult] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const classes = useStyles();
+
+  const changeHandler = e => setSearchTerm(e.target.value);
+
+  useEffect(() => {
+    const result = countries.filter(country =>
+      country.country.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    setSearchResult(result);
+  }, [searchTerm, countries]);
 
   if (!countries) {
     return <h1 style={{ textAlign: 'center', color: '#fff' }}>Loading...</h1>;
@@ -35,6 +44,7 @@ export default function MainContent() {
           id='standard-secondary'
           label='Search Country'
           color='secondary'
+          onChange={changeHandler}
         />
       </div>
 
@@ -61,7 +71,7 @@ export default function MainContent() {
         </section>
 
         {countries &&
-          countries.map((country, index) => (
+          searchResult.map((country, index) => (
             <CountryCard country={country} key={index} />
           ))}
       </div>
