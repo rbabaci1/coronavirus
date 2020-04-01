@@ -3,7 +3,7 @@ import { Media, Player, controls } from 'react-media-player';
 
 import './video.scss';
 
-export default function Video() {
+export default function Video({ url }) {
   const { PlayPause, MuteUnmute } = controls;
 
   return (
@@ -11,7 +11,7 @@ export default function Video() {
       <Media>
         <div className='media'>
           <div className='media-player'>
-            <Player src='https://www.youtube.com/watch?v=4J0d59dd-qM&t=1754s' />
+            <Player src={url} />
           </div>
 
           <div className='media-controls'>
