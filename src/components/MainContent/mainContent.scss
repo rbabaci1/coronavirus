@@ -1,3 +1,5 @@
+@import '../../mixins/mixins.scss';
+
 .countries {
   margin-left: 250px;
 
@@ -7,22 +9,14 @@
     width: fit-content;
 
     .first-row {
-      display: flex;
-      justify-content: center;
+      @include flex-here(row, center, null);
       margin-top: 20px;
       background-color: rgb(54, 52, 50);
 
       p {
-        box-sizing: border-box;
-        margin: 0;
+        @include row-style();
         color: #f7f7f7;
-        width: 100px;
-        height: 70px;
         padding: 10px 3px;
-        text-align: center;
-        border: 1px solid rgb(85, 84, 84);
-        font-size: 18px;
-        letter-spacing: 0.5px;
       }
 
       #country {
