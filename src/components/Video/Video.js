@@ -7,7 +7,7 @@ export default function Video({ url }) {
   const { PlayPause, MuteUnmute } = controls;
 
   return (
-    <div>
+    <div className='video-wrapper'>
       <Media>
         <div className='media'>
           <div className='media-player'>

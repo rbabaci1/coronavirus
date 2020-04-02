@@ -1,16 +1,8 @@
-div {
-  background: rgba(23, 56, 65, 0.5);
-
+.video-wrapper {
   .media {
-    margin-top: 20px;
-    background: rgba(23, 78, 161, 0.5);
-    width: fit-content;
+    margin: 30px;
+    background: rgba(9, 23, 27, 0.8);
 
-    .media-player {
-      width: fit-content;
-      margin: auto;
-      height: 100%;
-    }
     .media-controls {
       text-align: center;
 

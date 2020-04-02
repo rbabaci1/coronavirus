@@ -64,9 +64,9 @@
 }
 .active {
   transition: 0.6s;
+  background-color: rgb(54, 52, 50);
 
   & ::first-line {
-    color: rgb(226, 222, 222);
+    color: #19beb1;
   }
-  background-color: rgb(54, 52, 50);
 }

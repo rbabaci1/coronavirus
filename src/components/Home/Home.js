@@ -1,6 +1,6 @@
 import React from 'react';
 import { useFetch } from '../../hooks/useFetch';
-
+import { Link } from 'react-router-dom';
 import './home.scss';
 
 export default function Home() {
@@ -10,6 +10,10 @@ export default function Home() {
 
   return (
     <div className='home'>
+      <div className='view-countries'>
+        <Link to='/countries'>view by country</Link>
+      </div>
+
       <div className='top'>
         <section>
           <h2>Coronavirus Cases:</h2>
