@@ -13,7 +13,7 @@ export default function NavBar() {
         </NavLink>
 
         <NavLink to='/countries'>
-          <li>Cases By Countries</li>
+          <li>Cases By Country</li>
         </NavLink>
 
         <NavLink to='/useful-info'>
