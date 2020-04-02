@@ -19,7 +19,7 @@ export default function UsefulInfo() {
         <Video url={video} key={i} />
       ))}
 
-      <h1>RESOURCES LINKS !!!</h1>
+      <h1>RESOURCES !!!</h1>
 
       <ul>
         <li>
