@@ -9,5 +9,13 @@ header {
     background-color: rgba(11, 21, 36, 0.5);
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
+
+    @media (max-width: 900px) {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 705px) {
+    margin: 0;
   }
 }

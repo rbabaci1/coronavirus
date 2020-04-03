@@ -35,4 +35,20 @@
       }
     }
   }
+
+  @media (max-width: 700px) {
+    margin: 0;
+
+    h1 {
+      font-size: 24px;
+    }
+    ul {
+      padding: 5px 20px;
+      li {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

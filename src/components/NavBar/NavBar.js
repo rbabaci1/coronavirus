@@ -4,9 +4,9 @@ import Moment from 'moment';
 
 import './navBar.scss';
 
-export default function NavBar() {
+export default function NavBar({ open }) {
   return (
-    <div className='navBar'>
+    <div className={open ? 'navBar show' : 'navBar'}>
       <ul>
         <NavLink exact to='/'>
           <li>Home</li>

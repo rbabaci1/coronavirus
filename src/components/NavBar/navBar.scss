@@ -7,6 +7,10 @@
   position: fixed;
   top: 0;
 
+  @media (max-width: 700px) {
+    display: none;
+  }
+
   ul {
     list-style-type: none;
     box-sizing: border-box;
@@ -42,7 +46,6 @@
     position: fixed;
     bottom: 139px;
     left: -140px;
-
     transform: rotate(-90deg);
     white-space: nowrap;
     @include add-style(16px, #19beb1, bold);
@@ -60,6 +63,10 @@
     margin: 0 0 5px 30px;
     letter-spacing: 0.5px;
     font-size: 17px;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 }
 .active {
@@ -69,4 +76,9 @@
   & ::first-line {
     color: #19beb1;
   }
+}
+
+.show {
+  display: block;
+  background-color: rgba(20, 35, 58, 1);
 }

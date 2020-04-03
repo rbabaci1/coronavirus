@@ -71,4 +71,13 @@
       color: rgb(77, 157, 231);
     }
   }
+
+  @media (max-width: 700px) {
+    margin: 0;
+
+    .view-countries {
+      a {
+      }
+    }
+  }
 }

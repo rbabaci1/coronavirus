@@ -30,3 +30,23 @@ h1 {
   margin-left: 250px;
   color: rgb(240, 75, 34);
 }
+
+.menu {
+  display: flex;
+  justify-content: center;
+
+  .MuiSvgIcon-root {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 50px;
+
+    &:hover {
+      color: gold;
+    }
+
+    @media (max-width: 700px) {
+      display: block;
+    }
+  }
+}
