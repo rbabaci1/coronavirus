@@ -60,7 +60,6 @@ export default function NavBar() {
       role='presentation'
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      id='drawer-menu'
     >
       <List>
         {['Home', 'Stats By Country', 'UseFul Info'].map((text, index) => (
@@ -80,6 +79,7 @@ export default function NavBar() {
           </NavLink>
         ))}
       </List>
+      <div className='copyright'>&copy;r.babaci 2020</div>
     </div>
   );
 
