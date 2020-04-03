@@ -79,7 +79,6 @@ export default function NavBar() {
           </NavLink>
         ))}
       </List>
-      <div className='copyright'>&copy;r.babaci 2020</div>
     </div>
   );
 
