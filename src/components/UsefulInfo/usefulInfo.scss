@@ -17,12 +17,13 @@
   }
 
   ul {
-    color: yellow;
+    color: red;
     padding: 10px 30px;
     background: rgba(9, 23, 27, 0.4);
 
     li {
       margin: 30px 0;
+      width: fit-content;
 
       a {
         color: #fff;
@@ -43,7 +44,6 @@
       font-size: 24px;
     }
     ul {
-      padding: 5px 20px;
       li {
         a {
           font-size: 18px;
