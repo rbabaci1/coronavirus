@@ -31,15 +31,15 @@ h1 {
   color: rgb(240, 75, 34);
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
+.MuiButton-label {
+  &:hover {
+    background-color: rgba(20, 35, 58, 0.8);
+  }
 
   .MuiSvgIcon-root {
-    display: none;
-    cursor: pointer;
     color: #fff;
-    font-size: 50px;
+    font-size: 45px;
+    color: rgb(230, 175, 38);
 
     &:hover {
       color: gold;
