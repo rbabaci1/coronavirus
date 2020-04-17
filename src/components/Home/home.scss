@@ -29,16 +29,18 @@
   h1 {
     margin: 0;
     padding: 20px 0;
-    color: rgb(226, 141, 62);
+    color: rgb(231, 190, 77);
+    background-color: rgba(11, 21, 36, 0.8);
     font-size: 40px;
     letter-spacing: 2px;
+    width: 100%;
   }
 
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px 20px;
+    margin: 30px 10px;
     padding: 10px 0;
     background-color: rgba(11, 21, 36, 0.8);
     padding: 30px;
@@ -74,10 +76,5 @@
 
   @media (max-width: 700px) {
     margin: 0;
-
-    .view-countries {
-      a {
-      }
-    }
   }
 }

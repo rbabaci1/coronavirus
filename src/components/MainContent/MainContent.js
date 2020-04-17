@@ -6,14 +6,14 @@ import './mainContent.scss';
 import TextField from '@material-ui/core/TextField';
 
 export default function MainContent() {
-  const countries = useFetch('https://corona.lmao.ninja/countries');
+  const countries = useFetch('https://corona.lmao.ninja/v2/countries');
   const [searchResult, setSearchResult] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const changeHandler = e => setSearchTerm(e.target.value);
+  const changeHandler = (e) => setSearchTerm(e.target.value);
 
   useEffect(() => {
-    const result = countries.filter(country =>
+    const result = countries.filter((country) =>
       country.country.toLowerCase().includes(searchTerm.toLowerCase())
     );
 

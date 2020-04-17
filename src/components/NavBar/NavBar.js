@@ -65,7 +65,7 @@ export default function NavBar() {
       <List>
         {['Home', 'Stats By Country', 'UseFul Info'].map((text, index) => (
           <NavLink exact to={link(index)} className='link'>
-            <ListItem button key={text}>
+            <ListItem button key={index}>
               <ListItemIcon>
                 {index === 0 ? (
                   <HomeIcon />

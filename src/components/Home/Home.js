@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './home.scss';
 
 export default function Home() {
-  const globalCases = useFetch('https://corona.lmao.ninja/all');
+  const globalCases = useFetch('https://corona.lmao.ninja/v2/all');
 
   if (!globalCases.cases) return <h1 className='status'>Loading...</h1>;
 
@@ -13,6 +13,8 @@ export default function Home() {
       <div className='view-countries'>
         <Link to='/countries'>view by country</Link>
       </div>
+
+      <h1>Global Cases</h1>
 
       <div className='top'>
         <section>
