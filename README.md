@@ -1,5 +1,6 @@
 ## About:
-Fresh Finds Farmer’s Market is a Web Application with a mobile view that helps connect local farmers with local buyers so that both parties can benefit from fresh, organic and wholesomely harvested produce. 
+A Web Application with a modern mobile view, created to help, educate and share information and stats with the public
+community about the Coronavirus pendamic.
 
 ## Used Technologies:
 JavaScript, React, React-router, Html/Css, Sass, Figma, Material UI.
