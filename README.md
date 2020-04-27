@@ -1,4 +1,9 @@
-## A Webpage created using ReactjS that allows you to view Covid-19 stats worldwide.
+## About:
+Fresh Finds Farmer’s Market is a Web Application with a mobile view that helps connect local farmers with local buyers so that both parties can benefit from fresh, organic and wholesomely harvested produce. 
+
+## Used Technologies:
+JavaScript, React, React-router, Html/Css, Sass, Figma, Material UI.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
