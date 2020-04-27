@@ -1,3 +1,5 @@
+## A Webpage created using ReactjS that allows you to view Covid-19 stats worldwide.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
