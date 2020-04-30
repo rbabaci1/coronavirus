@@ -1,6 +1,6 @@
 ## About:
 A Web Application with a modern mobile view, created to help, educate and share information and stats with the public
-community about the Coronavirus pendamic.
+community about the Coronavirus pendemic.
 
 ## Used Technologies:
 JavaScript, React, React-router, Html/Css, Sass, Figma, Material UI.
