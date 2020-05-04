@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './countryCard.scss';
 
 export default function CountryCard({ country }) {

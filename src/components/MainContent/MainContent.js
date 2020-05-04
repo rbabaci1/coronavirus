@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useFetch } from '../../hooks/useFetch';
-
 import CountryCard from '../CountryCard/CountryCard';
 import './mainContent.scss';
 import TextField from '@material-ui/core/TextField';
