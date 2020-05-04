@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFetch } from '../../hooks/useFetch';
 import { Link } from 'react-router-dom';
+import NumberFormat from 'react-number-format';
 import './home.scss';
 
 export default function Home() {
@@ -19,24 +20,50 @@ export default function Home() {
       <div className='top'>
         <section>
           <h2>Coronavirus Cases:</h2>
-          <span className='cases'>{globalCases.cases}</span>
+
+          <NumberFormat
+            value={globalCases.cases}
+            displayType={'text'}
+            thousandSeparator={true}
+            renderText={(value) => <span className='cases'>{value}</span>}
+          />
         </section>
 
         <section>
           <h2>Deaths:</h2>
-          <span className='deaths'>{globalCases.deaths}</span>
+
+          <NumberFormat
+            value={globalCases.deaths}
+            displayType={'text'}
+            thousandSeparator={true}
+            renderText={(value) => <span className='deaths'>{value}</span>}
+          />
         </section>
       </div>
 
       <div className='bottom'>
         <section>
           <h2>Recovered:</h2>
-          <span className='recovered'>{globalCases.recovered}</span>
+
+          <NumberFormat
+            value={globalCases.recovered}
+            displayType={'text'}
+            thousandSeparator={true}
+            renderText={(value) => <span className='recovered'>{value}</span>}
+          />
         </section>
 
         <section>
           <h2>Active Cases:</h2>
-          <span className='active-cases'>{globalCases.active}</span>
+
+          <NumberFormat
+            value={globalCases.active}
+            displayType={'text'}
+            thousandSeparator={true}
+            renderText={(value) => (
+              <span className='active-cases'>{value}</span>
+            )}
+          />
         </section>
       </div>
     </div>
