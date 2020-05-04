@@ -17,6 +17,9 @@
     "react-scripts": "3.4.1",
     "recharts": "^1.8.5"
   },
+  "resolutions": {
+    "moment": "2.24.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -37,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "resolutions": {
-    "moment": "2.24.0"
   }
 }
