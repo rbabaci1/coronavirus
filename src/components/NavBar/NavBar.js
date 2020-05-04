@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Moment from 'moment';
+import moment from 'moment/moment';
 import './navBar.scss';
 
 import clsx from 'clsx';
@@ -114,7 +114,7 @@ export default function NavBar() {
 
         <p>
           Last updated:{' '}
-          <span>{Moment().format('MMMM Do YYYY, h:00 a PT')}</span>
+          <span>{moment().format('MMMM Do YYYY, h:00 a PT')}</span>
         </p>
 
         <div id='copyright'>&copy;r.babaci 2020</div>
