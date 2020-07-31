@@ -1,12 +1,14 @@
 ## About:
 A Web Application with a modern mobile view, created to help, educate and share information and stats with the public
 community about the Coronavirus pendemic.
+------------------------------------------------
 
 ## Used Technologies:
 JavaScript, React, React-router, Html/Css, Sass, Figma, Material UI.
-
+------------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+------------------------------------------------
 
 ## Available Scripts
 
