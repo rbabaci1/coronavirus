@@ -1,4 +1,4 @@
-@import '../../mixins/mixins.scss';
+@import "../../mixins/mixins.scss";
 
 .navBar {
   @include height-width(100vh, 250px);
@@ -44,8 +44,8 @@
   }
   p {
     position: fixed;
-    bottom: 139px;
-    left: -140px;
+    bottom: 150px;
+    left: -150px;
     transform: rotate(-90deg);
     white-space: nowrap;
     @include add-style(16px, #19beb1, bold);
